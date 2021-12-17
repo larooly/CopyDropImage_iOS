@@ -7,8 +7,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextPasteDelegate>
 
+@property (weak, nonatomic) IBOutlet UIImageView *_imageView;
+@property (weak, nonatomic) IBOutlet UITextView *_inputText;
 
 @end
 
